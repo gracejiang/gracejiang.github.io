@@ -1,0 +1,39 @@
+@keyframes floatIn {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.03);
+  }
+}
+
+/* mobile */
+@media (max-width: 680px) {
+  @keyframes floatIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }}
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}
